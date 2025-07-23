@@ -1,4 +1,4 @@
-package com.employee.Models;
+package com.employee.model;
 
 import jakarta.persistence.*;
 import lombok.*;

@@ -1,0 +1,3 @@
+INSERT INTO department ( name, location, description, head_of_department ) VALUES ('Computer Science', 'Building A', 'Department of Computer Science', 'Dr. Alice Smith' );
+INSERT INTO department ( name, location, description, head_of_department ) VALUES ('Mathematics', 'Building B', 'Department of Mathematics', 'Dr. Bob Johnson' );
+INSERT INTO department ( name, location, description, head_of_department ) VALUES ('Physics', 'Building C', 'Department of Physics', 'Dr. Carol White' );

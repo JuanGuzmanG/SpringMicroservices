@@ -1,4 +1,4 @@
-package com.employee.controller.DTO;
+package com.deparment.controller.DTO;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

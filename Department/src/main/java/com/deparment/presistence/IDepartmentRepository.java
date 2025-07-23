@@ -1,4 +1,13 @@
 package com.deparment.presistence;
 
-public interface IDepartmentRepository {
+import com.deparment.model.Department;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface IDepartmentRepository extends CrudRepository<Department, Long> {
+
+    List<Department> findAll();
 }

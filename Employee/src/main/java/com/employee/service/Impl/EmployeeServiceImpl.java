@@ -1,9 +1,9 @@
-package com.employee.services.Impl;
+package com.employee.service.Impl;
 
-import com.employee.Models.Employee;
-import com.employee.Persistence.EmployeeRepository;
-import com.employee.controllers.DTO.EmployeeDTO;
-import com.employee.services.IEmployeeService;
+import com.employee.model.Employee;
+import com.employee.persistence.EmployeeRepository;
+import com.employee.controller.DTO.EmployeeDTO;
+import com.employee.service.IEmployeeService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

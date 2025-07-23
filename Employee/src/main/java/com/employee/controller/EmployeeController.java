@@ -1,8 +1,7 @@
-package com.employee.controllers;
+package com.employee.controller;
 
-import com.employee.Models.Employee;
-import com.employee.controllers.DTO.EmployeeDTO;
-import com.employee.services.IEmployeeService;
+import com.employee.controller.DTO.EmployeeDTO;
+import com.employee.service.IEmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +22,7 @@ public class EmployeeController {
         return new ResponseEntity<>(this.employeeService.findALl(), HttpStatus.OK);
     }
 
-    @GetMapping("/employees/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<Optional<EmployeeDTO>> findById(@PathVariable Long id) {
         return new ResponseEntity<>(this.employeeService.findById(id), HttpStatus.OK);
     }
@@ -45,7 +44,8 @@ public class EmployeeController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public void delete(@RequestBody Long id) {
+    public void delete(@PathVariable Long id) {
         employeeService.deleteById(id);
     }
+
 }
